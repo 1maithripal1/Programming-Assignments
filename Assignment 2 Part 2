@@ -1,0 +1,27 @@
+#include <iostream.h>
+#include <stdlib.h>
+
+int factorial(int);
+
+void main(void) {
+int number;
+
+cout << "Please enter a positive integer: ";
+cin >> number;
+if (number < 1)
+cout << "That is not a positive integer.\n";
+ 
+else
+cout << number << " factorial is: " << factorial(number) << endl;
+
+}
+
+int factorial(int number) {
+
+if(number <= 1) return 1;
+else
+return number * factorial(number - 1);
+
+system ("PAUSE");
+return 0;
+}
